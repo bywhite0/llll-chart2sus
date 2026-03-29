@@ -1,0 +1,55 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python cache and tooling output
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Build and package output
+build/
+dist/
+
+# Rust/Cargo build artifacts
+**/target/
+**/*.pdb
+**/*.rs.bk
+
+# Temporary work files
+tmp/
+temp/
+*.tmp
+*.log
+
+# Local conversion artifacts generated at repository root
+/*.sus
+/*.svg
