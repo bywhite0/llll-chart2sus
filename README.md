@@ -54,6 +54,26 @@ Validation path:
 1. Parse and sanity-check generated `.sus`.
 2. Render to SVG for visual inspection.
 
+Optional cross-check with reference validators:
+
+`scores` (Python parser):
+
+Repository: [pjsekai/scores](https://gitlab.com/pjsekai/scores)
+
+```powershell
+cd .\scores
+python -m pjsekai.scores ..\tmp\203115_04.sus
+```
+
+`pjsekai-scores-rs` (Rust parser/renderer):
+
+Repository: [Team-Haruki/pjsekai-scores-rs](https://github.com/Team-Haruki/pjsekai-scores-rs)
+
+```powershell
+cd .\pjsekai-scores-rs
+cargo run -- ..\tmp\203115_04.sus -o ..\tmp\203115_04.rust.svg
+```
+
 ### 4. Run environment checks
 
 ```powershell
